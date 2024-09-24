@@ -14,8 +14,26 @@ Cases
 4.  the program with possible test cases.
 5. Stop the program.
 ### Program:
+```
+def display():
+    start = input("Enter a positive value for START: ")
+    end = input("Enter a positive value for END: ")
 
+    if start.isnumeric() and end.isnumeric():
+        start = int(start)
+        end = int(end)
+        while True:
+            print(start, end=' ')
+            if start < end:
+                start += 1
+            else:
+                break
+    else:
+        print("Enter a valid positive number.")
 
+display()
+
+```
 
 
 
